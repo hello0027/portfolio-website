@@ -83,12 +83,12 @@ export default function App() {
   </a>
 
   <a
-    href="/resume.pdf"
-    download
-    className="border border-zinc-700 px-6 py-3 rounded-xl inline-block"
-  >
-    Download Resume
-  </a>
+  href="/resume.pdf"
+  download
+  className="border border-zinc-700 px-6 py-3 rounded-xl inline-block"
+>
+  Download Resume
+</a>
 </div>
 
     {/* Right Side */}
@@ -180,8 +180,21 @@ export default function App() {
 
         <div className="space-y-4 text-lg text-zinc-400">
           <p>📧 kotwanibhumi27@gmail.com</p>
-          <p>💼 https://www.linkedin.com/in/bhumi-kotwani-638227308?utm_source=share_via&utm_content=profile&utm_medium=member_ios</p>
-          <p>💻 github.com/bhumi</p>
+          <a
+  href="https://www.linkedin.com/in/bhumi-kotwani-638227308"
+  target="_blank"
+  className="block text-blue-400"
+>
+  💼 LinkedIn
+</a>
+
+<a
+  href="https://github.com/hello0027"
+  target="_blank"
+  className="block text-blue-400"
+>
+  💻 GitHub
+</a>
         </div>
       </section>
 
