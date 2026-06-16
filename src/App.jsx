@@ -1,4 +1,5 @@
 export default function App() {
+  import profile from "./assets/bhumi.jpg.jpeg";
   const skills = [
     "Python",
     "SQL",
@@ -52,50 +53,49 @@ export default function App() {
       </nav>
 
       {/* Hero */}
-      <section className="max-w-6xl mx-auto px-8 py-28">
-        <p className="text-zinc-500 text-lg mb-4">
-          Hello, I'm Bhumi 👋
-        </p>
+      <section className="max-w-6xl mx-auto px-8 py-20">
+  <div className="grid md:grid-cols-2 gap-12 items-center">
 
-        <h1 className="text-6xl md:text-8xl font-bold leading-tight">
-          Data Scientist
-          <br />
-          & AI Developer
-        </h1>
+    {/* Left Side */}
+    <div>
+      <p className="text-zinc-500 text-lg mb-4">
+        Hello, I'm Bhumi 👋
+      </p>
 
-        <p className="text-zinc-400 text-xl mt-8 max-w-3xl leading-relaxed">
-          I build machine learning models, analytics dashboards,
-          AI-powered applications and modern web experiences.
-        </p>
+      <h1 className="text-6xl md:text-7xl font-bold leading-tight">
+        Data Scientist
+        <br />
+        & AI Developer
+      </h1>
 
-        <div className="flex gap-4 mt-10">
-          <button className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:scale-105 transition">
-            View Projects
-          </button>
+      <p className="text-zinc-400 text-xl mt-8 leading-relaxed">
+        I build machine learning models,
+        analytics dashboards, AI-powered
+        applications and modern web experiences.
+      </p>
 
-          <button className="border border-zinc-700 px-6 py-3 rounded-xl hover:bg-zinc-900 transition">
-            Download Resume
-          </button>
-        </div>
-      </section>
+      <div className="flex gap-4 mt-10">
+        <button className="bg-white text-black px-6 py-3 rounded-xl font-semibold">
+          View Projects
+        </button>
 
-      {/* About */}
-      <section
-        id="about"
-        className="max-w-6xl mx-auto px-8 py-20"
-      >
-        <h2 className="text-4xl font-bold mb-8">
-          About Me
-        </h2>
+        <button className="border border-zinc-700 px-6 py-3 rounded-xl">
+          Download Resume
+        </button>
+      </div>
+    </div>
 
-        <p className="text-zinc-400 text-lg leading-8 max-w-4xl">
-          I am a Data Science student passionate about Artificial
-          Intelligence, Machine Learning, Data Analytics and
-          Full Stack Development. I enjoy building data-driven
-          products that solve real-world problems and create
-          meaningful user experiences.
-        </p>
-      </section>
+    {/* Right Side */}
+    <div className="flex justify-center">
+      <img
+        src={profile}
+        alt="Bhumi"
+        className="w-80 h-80 object-cover rounded-full border-4 border-white shadow-2xl"
+      />
+    </div>
+
+  </div>
+</section>
 
       {/* Skills */}
       <section
