@@ -1,5 +1,6 @@
+import profile from "./assets/bhumi.jpg.jpeg";
+
 export default function App() {
-  import profile from "./assets/bhumi.jpg.jpeg";
   const skills = [
     "Python",
     "SQL",
@@ -55,7 +56,7 @@ export default function App() {
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-8 py-20">
   <div className="grid md:grid-cols-2 gap-12 items-center">
-
+    </div>
     {/* Left Side */}
     <div>
       <p className="text-zinc-500 text-lg mb-4">
@@ -69,21 +70,26 @@ export default function App() {
       </h1>
 
       <p className="text-zinc-400 text-xl mt-8 leading-relaxed">
-        I build machine learning models,
-        analytics dashboards, AI-powered
-        applications and modern web experiences.
+        I build machine learning models, analytics dashboards,
+        AI-powered applications and modern web experiences.
       </p>
 
       <div className="flex gap-4 mt-10">
-        <button className="bg-white text-black px-6 py-3 rounded-xl font-semibold">
-          View Projects
-        </button>
+  <a
+    href="#projects"
+    className="bg-white text-black px-6 py-3 rounded-xl font-semibold inline-block"
+  >
+    View Projects
+  </a>
 
-        <button className="border border-zinc-700 px-6 py-3 rounded-xl">
-          Download Resume
-        </button>
-      </div>
-    </div>
+  <a
+    href="/resume.pdf"
+    download
+    className="border border-zinc-700 px-6 py-3 rounded-xl inline-block"
+  >
+    Download Resume
+  </a>
+</div>
 
     {/* Right Side */}
     <div className="flex justify-center">
@@ -95,6 +101,20 @@ export default function App() {
     </div>
 
   </div>
+</section>
+<section
+  id="about"
+  className="max-w-6xl mx-auto px-8 py-20"
+>
+  <h2 className="text-4xl font-bold mb-8">
+    About Me
+  </h2>
+
+  <p className="text-zinc-400 text-lg leading-8 max-w-4xl">
+    I am a Data Science student passionate about
+    Artificial Intelligence, Machine Learning,
+    Data Analytics and Full Stack Development.
+  </p>
 </section>
 
       {/* Skills */}
